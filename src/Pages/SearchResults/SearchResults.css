@@ -1,0 +1,50 @@
+/* SearchResults.css */
+
+.feed {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+  flex: 1;
+  overflow-y: auto;
+  margin-left: 17%;
+}
+
+.card {
+  width: 280px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  overflow: hidden;
+  text-decoration: none;
+  color: #000;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+}
+
+.card:hover {
+  transform: scale(1.03);
+}
+
+.card img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+}
+
+.card h2 {
+  font-size: 16px;
+  margin: 10px;
+  font-weight: 600;
+}
+
+.card h3 {
+  font-size: 14px;
+  margin: 0 10px;
+  color: #606060;
+}
+
+.card p {
+  font-size: 12px;
+  margin: 10px;
+  color: #909090;
+}

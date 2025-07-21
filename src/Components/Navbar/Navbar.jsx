@@ -2,7 +2,6 @@ import React, { useState, useEffect, useRef } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import "./Navbar.css";
 import menu_icon from "../../assets/menu.png";
-import logo from "../../assets/logo.png";
 import upload_icon from "../../assets/upload.png";
 import more_icon from "../../assets/more.png";
 import notification_icon from "../../assets/notification.png";
@@ -22,6 +21,7 @@ const Navbar = ({ setSidebar }) => {
     if (searchQuery.trim()) {
       navigate(`/search/${searchQuery.trim()}`);
     }
+    setSearchQuery("")
   };
 
   // Handle Enter key
@@ -76,8 +76,7 @@ const Navbar = ({ setSidebar }) => {
           onClick={() => setSidebar((prev) => !prev)}
         />
         <Link to="/">
-                  
-                  <h1 style={{color:"Black"}}>Youtube</h1>
+          <h1 style={{color:"Black"}}>Youtube</h1>
         </Link>
       </div>
 
